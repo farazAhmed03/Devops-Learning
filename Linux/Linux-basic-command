@@ -1,0 +1,30 @@
+#Folder and File Basics (Navigation & Management)
+
+pwd                  → Show current directory (where you are right now)
+ls                   → List files and folders in current directory
+ls -l                → List with details (permissions, size, date)
+ls -la               → Show hidden files too (files starting with .)
+cd Desktop           → Go into the Desktop folder
+cd ..                → Go one folder up (back)
+cd ~                 → Go to your home folder
+cd /                 → Go to root (top level of the system)
+mkdir myfolder       → Create a new folder
+mkdir -p folder/subfolder → Create folders inside folders (no error if already exists)
+touch file.txt       → Create a new empty file (or update timestamp)
+cp file.txt backup.txt → Copy a file
+cp -r folder1 folder2 → Copy entire folder (with everything inside)
+mv oldname newname   → Rename file/folder or move it
+rm file.txt          → Delete a file
+rm -r folder         → Delete entire folder (be careful!)
+rm -rf folder        → Force delete folder (no questions asked – very dangerous!)
+
+#Viewing Files and Checking Logs
+
+cat file.txt         → Show whole file content on screen
+less file.txt        → View file page by page (press q to quit)
+tail file.log        → Show last 10 lines of file
+tail -f file.log     → Follow live logs (great for watching running apps)
+head file.txt        → Show first 10 lines
+head -n 20 file.txt  → Show first 20 lines
+
+
